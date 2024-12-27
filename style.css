@@ -1,0 +1,153 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    background-image: url('image/image.1.jpg'); /* Gambar latar belakang */
+    background-size: cover; /* Menutupi seluruh layar */
+    background-position: center center; /* Posisi gambar di tengah */
+    background-attachment: fixed; /* Gambar tetap saat scroll */
+    margin: 0;
+    padding: 0;
+}
+
+/* Judul */
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px; /* Ukuran font lebih besar */
+}
+
+/* Tabel */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); /* Efek transparansi agar tabel lebih mudah dibaca */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Sudut tabel lebih membulat */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #0f0f0f;
+}
+
+th {
+    background-color: #6c7ae0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tombol */
+button, a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Tombol tambah */
+a[href*="tambah"] {
+    background-color: #28a745;
+    color: #fff;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    width: 150px;
+}
+
+a[href*="tambah"]:hover {
+    background-color: #218838;
+}
+
+/* Tombol aksi (Edit, Hapus) */
+a[href*="edit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+a[href*="edit"]:hover {
+    background-color: #0056b3;
+}
+
+a[href*="hapus"] {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+a[href*="hapus"]:hover {
+    background-color: #c82333;
+}
+
+/* Formulir */
+form {
+    width: 90%;
+    max-width: 600px; /* Menambahkan batas lebar maksimum untuk formulir */
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Efek transparansi */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%; /* Tabel akan mengambil lebar penuh pada layar kecil */
+    }
+
+    form {
+        width: 95%; /* Formulir akan lebih lebar pada layar kecil */
+    }
+
+    h1 {
+        font-size: 20px; /* Ukuran judul lebih kecil di layar kecil */
+    }
+
+    a[href*="tambah"] {
+        width: 130px; /* Tombol tambah lebih kecil pada layar kecil */
+    }
+
+    button {
+        font-size: 12px; /* Ukuran font tombol lebih kecil */
+    }
+}
